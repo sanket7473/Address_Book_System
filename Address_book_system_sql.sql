@@ -32,4 +32,8 @@ update Address_Book_Table set firstname ='sohan' where firstname='mohit';
 
 //UC5 Ability to delete person using person name
 
-delete from Address_Book_Table where firstname='sohan';   
+delete from Address_Book_Table where firstname='sohan'; 
+  
+//UC5 Ability to person retrieving to a particular city
+
+select * from Address_Book_table where city='mumbai'; 
