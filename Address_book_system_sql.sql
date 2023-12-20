@@ -57,4 +57,8 @@ update Address_Book_Table set type='friend' where firstname='sanket';
 update Address_Book_Table set type='family' where firstname='shubham';
 update Address_Book_Table set type='friend' where firstname='mohit'; 
 
+//UC10 Ability to get the number of contact persons count by type
+SELECT type, COUNT(*) as contact_count
+FROM Address_Book_Table
+GROUP BY type;
 
