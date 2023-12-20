@@ -62,3 +62,10 @@ SELECT type, COUNT(*) as contact_count
 FROM Address_Book_Table
 GROUP BY type;
 
+//UC11 Ability to add person to both friend and family
+update Address_Book_Table set type='friend' where firstname='sanket';
+update Address_Book_Table set type='friend' where firstname='rohan';
+update Address_Book_Table set type='family' where firstname='vinay';
+update Address_Book_Table set type='friend' where firstname='sanket';
+update Address_Book_Table set type='family' where firstname='shubham';
+update Address_Book_Table set type='friend' where firstname='mohit'
