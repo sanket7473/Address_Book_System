@@ -29,3 +29,7 @@ insert into Address_Book_Table (firstname,lastname,address,city,state,zip,phone_
 //UC4 Ability to edit existing contact person
 select * from Address_Book_Table;
 update Address_Book_Table set firstname ='sohan' where firstname='mohit';
+
+//UC5 Ability to delete person using person name
+
+delete from Address_Book_Table where firstname='sohan';   
