@@ -34,6 +34,11 @@ update Address_Book_Table set firstname ='sohan' where firstname='mohit';
 
 delete from Address_Book_Table where firstname='sohan'; 
   
-//UC5 Ability to person retrieving to a particular city
+//UC6 Ability to person retrieving to a particular city
 
 select * from Address_Book_table where city='mumbai'; 
+
+//UC7 Ability to understand the size of address book by city
+SELECT City, State, COUNT(*) as AddressCount
+FROM Address_Book_table
+GROUP BY City, State;
