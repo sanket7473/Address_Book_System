@@ -42,3 +42,7 @@ select * from Address_Book_table where city='mumbai';
 SELECT City, State, COUNT(*) as AddressCount
 FROM Address_Book_table
 GROUP BY City, State;
+
+//UC8 Ability to retrieve entries sorted alphabetically by persons name for given city
+select * from Address_Book_Table
+order by firstname asc;
