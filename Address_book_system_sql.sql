@@ -46,3 +46,15 @@ GROUP BY City, State;
 //UC8 Ability to retrieve entries sorted alphabetically by persons name for given city
 select * from Address_Book_Table
 order by firstname asc;
+
+//UC9 Ability to identify each address book with name and type.
+ALTER TABLE Address_Book_Table
+ADD COLUMN type varchar(50) ;
+update Address_Book_Table set type='friend' where firstname='sanket';
+update Address_Book_Table set type='friend' where firstname='rohan';
+update Address_Book_Table set type='family' where firstname='vinay';
+update Address_Book_Table set type='friend' where firstname='sanket';
+update Address_Book_Table set type='family' where firstname='shubham';
+update Address_Book_Table set type='friend' where firstname='mohit'; 
+
+
