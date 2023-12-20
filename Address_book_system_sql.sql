@@ -19,3 +19,9 @@ phone_number varchar(20),
 email varchar(255)
 
 );
+
+//Ability to insert new contacts to address book
+insert into Address_Book_Table (firstname,lastname,address,city,state,zip,phone_number,email) values
+('sanket','garde','ghatkopar','mumbai','maharashtra',40075,'7558797573','sanket@gmail.com'),
+('rohan','shinde','pune','pune','maharashtra',411048,'7558654873','rohan@gmail.com'),
+('mohit','shinde','wakad','pune','maharashtra',411042,'9860641089','mohit@gmail.com');
